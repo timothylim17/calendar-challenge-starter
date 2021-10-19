@@ -9,7 +9,7 @@ Sound boring? Wait ‘til you’ve tried it 😉 I had to do this recently for a
 Here's what my solution looks like (note the fashionable dark-mode 😎):
 ![completed calendar example](./public/example-screen-shot.png)
 
-## Submissions for the FREE ACCESS drawing must meet the following criteria:
+## Submissions must meet the following criteria:
 
 1. **The calendar must “look like” a real calendar** - i.e. everything should be aligned in a 7-column grid, and the left-most column should be Sunday (or Saturday, or Monday, or whatever weekday your week starts on - I think I remember hearing that this is different in different parts of the world)
 2. **The calendar must start by showing whatever month the `startingDate` prop belongs to** - note that in the `App.js` component, we’re currently passing `today`, but there are many situations where we’d want to pass a different `startingDate` and have the calendar jump to a different month in the past/future.
@@ -23,7 +23,7 @@ Here's what my solution looks like (note the fashionable dark-mode 😎):
 
 ## And some hints:
 
-1. JavaScript’s `Date` is going to be your friend here
+1. JavaScript’s `Date` is going to be your friend here. You can also use the Moment library if you really want to.
 2. You can tell if two `Dates` are equal by just comparing their year, month, and date and see if all of those are the same
 3. You may want to create some sort of `getDatesForMonth` function which takes `year` and a `month` arguments and returns a date object for all 28 or 29 or 30 or 31 days in the month. Just a suggestion...
 4. You’re allowed to use whatever styling libraries you want, but no libraries that take care of the calendar logic! That would be cheating ;)
